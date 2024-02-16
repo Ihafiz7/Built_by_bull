@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron&family=Playfair+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+};
+
+.list{
+  @apply sm:no-underline xl:underline xl:underline-offset-8 ;
+};
+
+.ul{
+  @apply sm:gap-4 flex xl:gap-16 tracking-custom cursor-pointer
+};
+@layer utilities {
+  .clip {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+};
+
+.hex{
+  @apply w-[180px] h-[180px] relative m-[5px] cursor-pointer hover:scale-90; 
+};
+
+.img{
+  @apply w-full h-full object-cover;
+};
+
+.button{
+  @apply w-40 h-12 border-2 border-solid rounded-lg bg-gray-400 hover:bg-blue-400 tracking-widest text-gray-600;
+};
+
